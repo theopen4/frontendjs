@@ -1,6 +1,8 @@
+import { ajoutListenersAvis } from "./avis.js";
+// Récupération des pièces depuis le fichier JSON
 const reponse = await fetch('pieces-autos.json');
 const pieces = await reponse.json();
- 
+
 function genererPieces(pieces){
     for (let i = 0; i < pieces.length; i++) {
 
@@ -39,17 +41,23 @@ function genererPieces(pieces){
         //Code aJouté
         pieceElement.appendChild(avisBouton);
      }
-    ajoutListenersAvis();
+     ajoutListenersAvis();
 }
 
 genererPieces(pieces);
 
+ //gestion des bouttons 
 const boutonTrier = document.querySelector(".btn-trier");
-boutonTrier.addEventListener("click", function(){
-    pieces.sort((a,b)=>{
+
+boutonTrier.addEventListener("click", function () {
+    const piecesOrdonnees = Array.from(pieces);
+    piecesOrdonnees.sort(function (a, b) {
         return a.prix - b.prix;
-    })
-})
+     });
+     document.querySelector(".fiches").innerHTML = "";
+    genererPieces(piecesOrdonnees);
+});
+
 
 /*for (let i = 0; i < pieces.length; i++) {
 
