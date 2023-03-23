@@ -55,3 +55,9 @@ for(let i = 0; i < pieces.length; i++ ){
     articleFiche.appendChild(stockElement);
     sectionFiches.appendChild(articleFiche);
 }
+const boutonTrier = document.querySelector(".btn-trier");
+boutonTrier.addEventListener("click", function(){
+    const piecesOrdonnees = Array.from(pieces);
+    piecesOrdonnees.sort((a,b) => a.prix - b.prix);
+    console.log(piecesOrdonnees);
+})
