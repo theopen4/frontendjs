@@ -60,4 +60,9 @@ boutonTrier.addEventListener("click", function(){
     const piecesOrdonnees = Array.from(pieces);
     piecesOrdonnees.sort((a,b) => a.prix - b.prix);
     console.log(piecesOrdonnees);
+});
+const bouttonFiltrer = document.querySelector(".btn-filtrer");
+bouttonFiltrer.addEventListener("click", function(){
+    pieces.filter(piece => piece.prix <= 35);
+    console.log(pieces); 
 })
