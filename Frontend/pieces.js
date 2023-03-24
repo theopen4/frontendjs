@@ -144,3 +144,5 @@ inputPrixMax.addEventListener('input', function(){
     genererPieces(piecesFiltrees);  
 })
 
+const piecesElements = document.querySelectorAll(".fiches article button");
+console.log(piecesElements)
