@@ -1,7 +1,8 @@
+import { ajoutListenerAvis } from "./avis.js";
 // Récupération des pièces depuis le fichier JSON
 const reponse = await fetch('pieces-autos.json');
 const pieces = await reponse.json();
-import { ajoutListenerAvis } from "./avis";
+
 
 function genererPieces(pieces){
     for (let i = 0; i < pieces.length; i++) {
@@ -39,9 +40,11 @@ function genererPieces(pieces){
         pieceElement.appendChild(stockElement);
         //Code aJouté
         pieceElement.appendChild(avisBouton);
-    
+        
      }
      ajoutListenerAvis();
+    
+     
 }
 
 genererPieces(pieces);
