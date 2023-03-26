@@ -1,6 +1,6 @@
 import { ajoutListenerAvis } from "./avis.js";
 // Récupération des pièces depuis le fichier JSON
-const reponse = await fetch('pieces-autos.json');
+const reponse = await fetch('http://localhost:8081/pieces');
 const pieces = await reponse.json();
 
 
@@ -49,7 +49,7 @@ function genererPieces(pieces){
 
 genererPieces(pieces);
 
- //gestion des bouttons 
+ //gestion des boutton
 const boutonTrier = document.querySelector(".btn-trier");
 
 boutonTrier.addEventListener("click", function () {
