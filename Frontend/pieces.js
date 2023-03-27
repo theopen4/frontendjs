@@ -49,7 +49,7 @@ function genererPieces(pieces){
 
 genererPieces(pieces);
 
- //gestion des boutton
+ //gestion des bouttons
 const boutonTrier = document.querySelector(".btn-trier");
 
 boutonTrier.addEventListener("click", function () {
