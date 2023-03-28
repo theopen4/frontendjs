@@ -12,7 +12,7 @@ export function ajoutListenerAvis(){
                 avisElement.innerHTML += `<b>${avis[i].utilisateur}:</b> ${avis[i].commentaire} <br>`;
             }
             pieceElement.appendChild(avisElement);    
-            console.log(avis)
+            
 
         });
     }
