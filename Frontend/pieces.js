@@ -185,7 +185,7 @@ console.log(recipe);
                 "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg",
                 "meta": [],
                 "name": "cinnamon",
-                "original": "1 tsp cinnamon",
+                "original": "1 tsp cinnamo",
                 "originalName": "cinnamon",
                 "unit": "tsp",
                 "unitLong": "teaspoon",
