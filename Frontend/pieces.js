@@ -205,7 +205,7 @@ console.log(recipe);
                 "unitShort": ""
             }
         ],
-        "title": "Apple Or Peach Strudell",
+        "title": "Apple Or Peach Strudel",
         "unusedIngredients": [],
         "usedIngredientCount": 1,
         "usedIngredients": [
