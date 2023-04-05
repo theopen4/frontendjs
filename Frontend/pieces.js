@@ -148,11 +148,11 @@
 //     document.querySelector(".fiches").innerHTML = "";
 //     genererPieces(piecesFiltrees);  
 // })
-const reponseResto = await fetch('https://api.spoonacular.com/recipes/complexSearch?apiKey=326c9b6d1bf949d1a0a8c4f2d7426595&includeNutrition=true .',{
-      headers: {
-        "Content-Type": "application/json"
-      } 
-     }
-)
-const recipe = await reponseResto.json();
-console.log(recipe);
+// const reponseResto = await fetch('https://api.spoonacular.com/recipes/complexSearch?apiKey=326c9b6d1bf949d1a0a8c4f2d7426595&includeNutrition=true .',{
+//       headers: {
+//         "Content-Type": "application/json"
+//       } 
+//      }
+// )
+// const recipe = await reponseResto.json();
+// console.log(recipe);
