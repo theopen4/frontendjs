@@ -172,7 +172,7 @@ console.log(recipe);
                 "image": "https://spoonacular.com/cdn/ingredients_100x100/white-powder.jpg",
                 "meta": [],
                 "name": "baking powder",
-                "original": "1 tsp baking powder",
+                "original": "1 tsp baking powde",
                 "originalName": "baking powder",
                 "unit": "tsp",
                 "unitLong": "teaspoon",
